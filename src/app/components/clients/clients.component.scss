@@ -1,0 +1,51 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1-5x);
+  align-items: flex-start;
+
+  background-color: var(--tui-base-01);
+  border-radius: var(--border-radius-xl);
+}
+
+.header {
+  padding: var(--spacing-3x);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  & div {
+    max-width: 500px;
+  }
+
+  & .subtitle {
+    margin-top: var(--spacing-2x);
+    color: #999;
+  }
+}
+
+.content {
+  width: 100%;
+  padding: var(--spacing-3x);
+}
+
+.table {
+  margin-top: var(--spacing-6x);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+  border-radius: var(--border-radius-l);
+}
+
+.empty-data {
+  padding: var(--spacing-6x);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

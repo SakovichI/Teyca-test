@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  overflow: auto;
+
+  & table {
+    width: 100%;
+    margin: var(--spacing-4x) 0;
+    & td,
+    th {
+      border-left: none;
+      border-right: none;
+    }
+
+    & th {
+      border-top: none;
+    }
+  }
+
+  & tui-pagination {
+    padding-top: var(--spacing-4x);
+  }
+}

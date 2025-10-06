@@ -1,0 +1,40 @@
+@let title = $isEditable() ? 'Редактирование' : 'Добавление';
+
+<h2 class="title">{{ title }} клиента</h2>
+
+<tui-loader [overlay]="true" [showLoader]="$isLoaded()">
+  <div class="content">
+    <app-clients-upsert-dialog-form [form]="$form()" />
+  </div>
+
+  <div class="actions">
+    <button type="button" tuiButton size="m" appearance="secondary" (click)="onClose()">
+      Отмена
+    </button>
+
+    @if($isEditable()){
+    <button
+      type="button"
+      appearance="accent"
+      tuiButton
+      size="m"
+      [disabled]="$isSaving()"
+      [showLoader]="$isSaving()"
+      (click)="onDelete()"
+    >
+      Удалить
+    </button>
+    }
+
+    <button
+      type="button"
+      tuiButton
+      size="m"
+      [disabled]="$form().invalid || $isSaving()"
+      [showLoader]="$isSaving()"
+      (click)="onSave()"
+    >
+      {{ $isEditable() ? 'Сохранить' : 'Создать' }}
+    </button>
+  </div>
+</tui-loader>

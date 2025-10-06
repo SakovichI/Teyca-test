@@ -1,0 +1,22 @@
+<h2 class="title">Новая Push рассылка</h2>
+
+<div class="content">
+  <app-clients-push-upsert-dialog-form [form]="$form()" />
+</div>
+
+<div class="actions">
+  <button type="button" tuiButton size="m" appearance="secondary" (click)="onClose()">
+    Отмена
+  </button>
+
+  <button
+    type="button"
+    tuiButton
+    size="m"
+    [disabled]="$form().invalid || $isSaving()"
+    [showLoader]="$isSaving()"
+    (click)="onSendPush()"
+  >
+    Отправить
+  </button>
+</div>

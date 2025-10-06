@@ -1,0 +1,21 @@
+.table-bar-content {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-4x) 0 var(--spacing-4x) 0;
+}
+
+.count-container {
+  display: flex;
+  flex: 1 1 50%;
+  align-items: center;
+  white-space: nowrap;
+
+  .count {
+    margin-right: var(--spacing-2x);
+    background-color: var(--tui-primary);
+
+    & > * {
+      color: var(--tui-text-01);
+    }
+  }
+}

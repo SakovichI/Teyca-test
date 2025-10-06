@@ -1,0 +1,20 @@
+.title {
+  margin-bottom: var(--spacing-6x);
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6x);
+  margin-bottom: var(--spacing-6x);
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-2x);
+  justify-content: flex-end;
+  margin-top: var(--spacing-6x);
+}

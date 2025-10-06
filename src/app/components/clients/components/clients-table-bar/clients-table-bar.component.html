@@ -1,0 +1,17 @@
+<div class="table-bar-content" tuiMode="onLight">
+  <span class="count-container">
+    <tui-badge class="count" size="l" status="primary" [value]="$selectedCount()" />
+    <span class="tui-text_body-l">Выбрано</span>
+  </span>
+
+  <button
+    type="button"
+    appearance="outline"
+    size="m"
+    tuiButton
+    icon="tuiIconSendLarge"
+    (click)="onTriggerAction()"
+  >
+    {{ ClientActionLabelsMap[ClientActionType.SendPush] }}
+  </button>
+</div>
