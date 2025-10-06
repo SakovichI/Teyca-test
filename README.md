@@ -12,11 +12,12 @@
 ## Команды
 
 ```bash
-npm install          # Установка зависимостей
-npm start            # Запуск dev-сервера (localhost:4200)
-npm run build        # Сборка для production
-npm run watch        # Сборка в режиме отслеживания
-npm test             # Запуск тестов
+npm install              # Установка зависимостей
+npm start                # Запуск dev-сервера (localhost:4200)
+npm run build            # Сборка для production
+npm run build:gh-pages   # Сборка для GitHub Pages
+npm run watch            # Сборка в режиме отслеживания
+npm test                 # Запуск тестов
 ```
 
 ## Структура проекта
