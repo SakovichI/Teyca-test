@@ -1,0 +1,30 @@
+@if($form(); as form){
+
+<ng-container [formGroup]="form">
+  <label>
+    <tui-input
+      class="input"
+      formControlName="login"
+      tuiTextfieldSize="m"
+      [tuiTextfieldCleaner]="true"
+    >
+      Логин
+    </tui-input>
+
+    <tui-error formControlName="login" [error]="[] | tuiFieldError | async" />
+  </label>
+
+  <label>
+    <tui-input-password
+      class="input"
+      formControlName="password"
+      tuiTextfieldSize="m"
+      [tuiTextfieldCleaner]="true"
+    >
+      Пароль
+    </tui-input-password>
+
+    <tui-error formControlName="password" [error]="[] | tuiFieldError | async" />
+  </label>
+</ng-container>
+}

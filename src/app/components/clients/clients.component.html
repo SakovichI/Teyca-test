@@ -1,0 +1,56 @@
+<header class="header">
+  <button
+    type="button"
+    tuiButton
+    size="s"
+    icon="tuiIconLogInLarge"
+    appearance="outline"
+    title="logout"
+    (click)="onLogout()"
+  >
+    Выйти
+  </button>
+</header>
+
+<main class="content">
+  <div class="heading">
+    <div>
+      <h1 class="tui-text_h4">Таблица клиентов</h1>
+      <p class="subtitle tui-text_body-m-2">
+        В этом разделе у вас есть возможность отправлять рассылки, а также редактировать информацию
+        о ваших клиентах.
+      </p>
+    </div>
+
+    <button
+      type="button"
+      tuiButton
+      size="s"
+      icon="tuiIconPlusLarge"
+      title="add client"
+      routerLink="new"
+    >
+      Добавить клиента
+    </button>
+  </div>
+
+  <app-clients-filter />
+
+  @if($isEmptyData()){
+  <div class="empty-data">
+    <span class="tui-text_h3"> Поиск не дал результатов</span>
+  </div>
+  }
+
+  <div class="table" [hidden]="$isEmptyData()">
+    <app-clients-table
+      [data]="$data()"
+      [isLoading]="$isLoading()"
+      [pageIndex]="$pageIndex()"
+      [pagesLength]="$pagesLength()"
+      (actionClicked)="onTriggerAction($event)"
+    />
+  </div>
+
+  <router-outlet />
+</main>

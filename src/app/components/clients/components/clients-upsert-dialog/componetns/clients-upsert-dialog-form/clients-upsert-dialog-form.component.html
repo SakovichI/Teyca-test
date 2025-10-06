@@ -1,0 +1,54 @@
+@if($form(); as form){
+
+<ng-container [formGroup]="form">
+  <div class="form-row">
+    <label>
+      <tui-input formControlName="firstName" tuiTextfieldSize="m" [tuiTextfieldCleaner]="true">
+        Имя
+      </tui-input>
+
+      <tui-error formControlName="firstName" [error]="[] | tuiFieldError | async" />
+    </label>
+    <label>
+      <tui-input formControlName="lastName" tuiTextfieldSize="m" [tuiTextfieldCleaner]="true">
+        Фамилия
+      </tui-input>
+
+      <tui-error formControlName="lastName" [error]="[] | tuiFieldError | async" />
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label>
+      <tui-input formControlName="gender" tuiTextfieldSize="m" [tuiTextfieldCleaner]="true">
+        Пол
+      </tui-input>
+
+      <tui-error formControlName="gender" [error]="[] | tuiFieldError | async" />
+    </label>
+
+    <label>
+      <tui-input formControlName="city" tuiTextfieldSize="m" [tuiTextfieldCleaner]="true">
+        Город
+      </tui-input>
+
+      <tui-error formControlName="city" [error]="[] | tuiFieldError | async" />
+    </label>
+  </div>
+  <label>
+    <tui-input formControlName="email" tuiTextfieldSize="m" [tuiTextfieldCleaner]="true">
+      Почта
+    </tui-input>
+
+    <tui-error formControlName="city" [error]="[] | tuiFieldError | async" />
+  </label>
+
+  <label>
+    <tui-input-phone formControlName="phone" tuiTextfieldSize="m" [tuiTextfieldCleaner]="true">
+      Телефон
+    </tui-input-phone>
+
+    <tui-error formControlName="phone" [error]="[] | tuiFieldError | async" />
+  </label>
+</ng-container>
+}

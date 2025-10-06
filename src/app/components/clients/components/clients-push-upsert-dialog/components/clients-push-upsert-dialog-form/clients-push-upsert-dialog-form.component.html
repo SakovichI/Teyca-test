@@ -1,0 +1,39 @@
+@if($form(); as form){
+
+<ng-container [formGroup]="form">
+  <label>
+    <span class="label-text" tuiLabel>Текс сообщения</span>
+    <tui-textarea
+      formControlName="pushMessage"
+      tuiTextfieldSize="m"
+      [tuiTextfieldCleaner]="true"
+      [tuiTextfieldLabelOutside]="true"
+    >
+      Введите текст сообщения
+    </tui-textarea>
+
+    <tui-error formControlName="pushMessage" [error]="[] | tuiFieldError | async" />
+  </label>
+
+  <div class="preview">
+    <span tuiLabel class="label-text">Превью</span>
+    <div class="preview-content">
+      {{ this.$form().controls.pushMessage.getRawValue() || 'Предпросмотр' }}
+    </div>
+  </div>
+
+  <label>
+    <span tuiLabel class="label-text">Дата отправки рассылки</span>
+    <tui-input-date-time
+      toNativeDateTime
+      formControlName="dateStart"
+      [tuiTextfieldCleaner]="true"
+      [tuiTextfieldLabelOutside]="true"
+    >
+      Сейчас
+    </tui-input-date-time>
+
+    <tui-error formControlName="dateStart" [error]="[] | tuiFieldError | async" />
+  </label>
+</ng-container>
+}

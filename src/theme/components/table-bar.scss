@@ -1,0 +1,32 @@
+:root {
+  tui-table-bars-host {
+    .t-bar {
+      .actions {
+        display: flex;
+        gap: var(--spacing-3x);
+        align-items: center;
+
+        button {
+          padding: 0;
+        }
+
+        [tuiWrapper] {
+          &::after {
+            border-color: white;
+          }
+
+          &[data-appearance='outline'] {
+            color: white;
+          }
+        }
+      }
+
+      .t-icon {
+        color: var(--neutral-0);
+      }
+      .t-content {
+        color: var(--neutral-0);
+      }
+    }
+  }
+}

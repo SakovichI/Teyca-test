@@ -1,0 +1,26 @@
+:host {
+  padding: var(--spacing-4x);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-card {
+    max-width: 400px;
+    padding: var(--spacing-2x);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4x);
+  }
+
+  .login-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3x);
+    align-items: center;
+  }
+
+  .login-subtitle {
+    opacity: 0.3;
+  }
+}

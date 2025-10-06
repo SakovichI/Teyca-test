@@ -1,12 +1,20 @@
-import { Component, signal } from '@angular/core';
+import { TuiAlertModule, TuiDialogModule, TuiRootModule } from '@taiga-ui/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TuiTableBarsHostModule } from '@taiga-ui/addon-tablebars';
+import { TuiPushModule } from '@taiga-ui/kit';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    TuiRootModule,
+    TuiTableBarsHostModule,
+    TuiDialogModule,
+    TuiPushModule,
+    TuiAlertModule,
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
-export class App {
-  protected readonly title = signal('teyca');
-}
+export class AppComponent {}

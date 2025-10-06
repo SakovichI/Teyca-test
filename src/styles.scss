@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+@use './theme/fonts.scss';
+@use './theme/theme.scss';
+@use './theme/variables.scss';
+@use './theme/components';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  user-select: none;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Segoe UI',
+    'Helvetica Neue', sans-serif;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.splash-screen {
+  position: absolute;
+  inset: 0;
+  background-color: var(--tui-base-02);
+
+  .notify {
+    position: relative;
+    top: 96px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 400px;
+    margin: 0 auto;
+
+    .logo {
+      margin-bottom: var(--spacing-6x);
+    }
+
+    .header {
+      margin-bottom: var(--spacing-8x);
+      color: var(--neutral-muted);
+    }
+
+    .body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 440px;
+      height: 100%;
+
+      background-color: var(--tui-base-01);
+      border-radius: var(--border-radius-xl);
+      box-shadow: var(--tui-shadow);
+
+      .content {
+        padding: var(--spacing-6x) var(--spacing-8x);
+
+        .loading {
+          width: 5rem;
+          height: 5.5rem;
+          margin: 0 auto 1.5rem;
+
+          background-color: var(--tui-primary);
+
+          mask-image: url('./assets/icons/loader.svg');
+          mask-position: center;
+          mask-repeat: no-repeat;
+          mask-size: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+<tui-loader [overlay]="true" [showLoader]="$isLoading()">
+  <table tuiSortBy tuiTable [columns]="columns" size="s">
+    <thead>
+      <tr tuiThGroup>
+        <th *tuiHead="'checkbox'" class="checkbox" tuiTh [sorter]="null" [sticky]="true">
+          <input
+            size="s"
+            tuiCheckbox
+            type="checkbox"
+            [indeterminate]="$isIndeterminate()"
+            [ngModel]="$areAllSelected()"
+            (change)="toggleAll()"
+          />
+        </th>
+        <th *tuiHead="'userId'" tuiTh [sticky]="true">ID</th>
+        <th *tuiHead="'oS'" tuiTh [sticky]="true">Устройство</th>
+        <th *tuiHead="'template'" tuiTh [sticky]="true">Макет карты</th>
+        <th *tuiHead="'barcode'" tuiTh [sticky]="true">Номер карты</th>
+        <th *tuiHead="'lastName'" tuiTh [sticky]="true">Фамилия владельца</th>
+        <th *tuiHead="'firstName'" tuiTh [sticky]="true">Имя владельца</th>
+        <th *tuiHead="'phone'" tuiTh [sticky]="true">Телефон</th>
+        <th *tuiHead="'discount'" tuiTh [sticky]="true">Скидка</th>
+        <th *tuiHead="'bonus'" tuiTh [sticky]="true">Бонус</th>
+        <th *tuiHead="'summAll'" tuiTh [sticky]="true">Сумма покупок</th>
+        <th *tuiHead="'link'" tuiTh [sticky]="true">Ссылка на карту</th>
+        <th *tuiHead="'createdAt'" tuiTh [sticky]="true">Дата создания</th>
+        <th *tuiHead="'actions'" tuiTh [sorter]="null" [sticky]="true"></th>
+      </tr>
+    </thead>
+
+    @let data = $data();
+
+    <tbody tuiTbody [data]="data | tuiTableSort">
+      @for (user of data | tuiTableSort; let index = $index; track user.userId) {
+      <tr tuiTr>
+        <td *tuiCell="'checkbox'" class="checkbox" tuiTd>
+          <input
+            size="s"
+            tuiCheckbox
+            type="checkbox"
+            [ngModel]="!!$selectedItemsMap().get(user.userId)"
+            (change)="toggle(user)"
+          />
+        </td>
+        <td *tuiCell="'userId'" tuiTd>
+          {{ user.userId }}
+        </td>
+
+        <td *tuiCell="'oS'" tuiTd>
+          {{ user.oS }}
+        </td>
+
+        <td *tuiCell="'template'" tuiTd>
+          {{ user.template }}
+        </td>
+        <td *tuiCell="'barcode'" tuiTd>
+          {{ user.barcode }}
+        </td>
+
+        <td *tuiCell="'lastName'" tuiTd>
+          {{ user.lastName || '-' }}
+        </td>
+
+        <td *tuiCell="'firstName'" tuiTd>
+          {{ user.firstName || '-' }}
+        </td>
+
+        <td *tuiCell="'phone'" tuiTd>
+          {{ user.phone || '-' }}
+        </td>
+
+        <td *tuiCell="'discount'" tuiTd>{{ user.discount || 0 }}%</td>
+
+        <td *tuiCell="'bonus'" tuiTd>{{ user.bonus || 0 }}%</td>
+
+        <td *tuiCell="'summAll'" tuiTd>
+          {{ user.summAll || 0 }}
+        </td>
+
+        <td *tuiCell="'link'" tuiTd>
+          <a
+            [href]="'https://cards.teyca.ru/download/' + user.link"
+            target="_blank"
+            tuiLink
+            icon="tuiIconDownloadLarge"
+            class="link"
+          >
+          </a>
+        </td>
+
+        <td *tuiCell="'createdAt'" tuiTd>
+          {{ user.createdAt | date : 'hh:mm dd.MM.y' }}
+        </td>
+
+        <td *tuiCell="'actions'" tuiTd>
+          <button
+            type="button"
+            tuiIconButton
+            size="s"
+            appearance="secondary"
+            shape="rounded"
+            icon="tuiIconEdit"
+            [routerLink]="user.userId + '/edit'"
+          ></button>
+        </td>
+      </tr>
+      }
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td [colSpan]="columns.length">
+          <tui-pagination
+            mwBindPaginationQueryParams
+            [index]="$pageIndex()"
+            [length]="$pagesLength()"
+          />
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</tui-loader>
+
+<ng-template #tableBarTemplate>
+  <app-clients-table-bar
+    [isDisabled]="false"
+    [selectedClients]="$selectedItems()"
+    [selectedCount]="$selectedCount()"
+    (actionClicked)="onTriggerAction()"
+  />
+</ng-template>
