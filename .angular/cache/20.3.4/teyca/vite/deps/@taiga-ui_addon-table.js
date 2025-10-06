@@ -8,7 +8,7 @@ import {
   TuiTileHandleDirective,
   TuiTilesComponent,
   TuiTilesModule
-} from "./chunk-DOVRBDID.js";
+} from "./chunk-OOEXMNOK.js";
 import {
   MODE_PROVIDER,
   TUI_COMMON_ICONS,
@@ -32,12 +32,10 @@ import {
   TuiSvgComponent,
   TuiSvgModule,
   TuiTextfieldAppearanceDirective,
+  tuiExtractI18n,
   tuiWatchedControllerFactory
-} from "./chunk-XCMDLZBW.js";
-import {
-  tuiExtractI18n
-} from "./chunk-T4CCKFGY.js";
-import "./chunk-OPOPPP4W.js";
+} from "./chunk-2B3GAIHW.js";
+import "./chunk-2WFSCSU5.js";
 import {
   ALWAYS_TRUE_HANDLER,
   AbstractTuiControl,
@@ -56,17 +54,15 @@ import {
   tuiPure,
   tuiQueryListChanges,
   tuiTypedFromEvent
-} from "./chunk-AIYDBCE4.js";
+} from "./chunk-XSZEMEAF.js";
+import {
+  NgControl
+} from "./chunk-ZVRBU4VF.js";
 import {
   PolymorpheusModule,
   PolymorpheusOutletDirective
 } from "./chunk-OCBWOXYR.js";
-import "./chunk-XSI3Z367.js";
 import "./chunk-XWRF4YCG.js";
-import {
-  NgControl
-} from "./chunk-ZVRBU4VF.js";
-import "./chunk-2WFSCSU5.js";
 import "./chunk-EFD2AJG6.js";
 import "./chunk-3B45YLHA.js";
 import "./chunk-EEZMQJEC.js";

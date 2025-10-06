@@ -1,184 +1,163 @@
 {
-  "hash": "95f9d42d",
-  "configHash": "02101759",
-  "lockfileHash": "60b707df",
-  "browserHash": "9884f7de",
+  "hash": "fe7f63d1",
+  "configHash": "99ef88a4",
+  "lockfileHash": "bb1d30c7",
+  "browserHash": "daffd5d7",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "b3a2e04f",
+      "fileHash": "211b6218",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "df082186",
+      "fileHash": "0ddce7bb",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "89a10c05",
+      "fileHash": "d292db43",
       "needsInterop": false
     },
     "@angular/core/rxjs-interop": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/rxjs-interop.mjs",
       "file": "@angular_core_rxjs-interop.js",
-      "fileHash": "bc31f08c",
+      "fileHash": "3462ea99",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "fbb31eb3",
+      "fileHash": "02db4dab",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "71918459",
+      "fileHash": "b2fc2eea",
       "needsInterop": false
     },
     "@angular/platform-browser/animations": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/animations.mjs",
       "file": "@angular_platform-browser_animations.js",
-      "fileHash": "3cefc88a",
+      "fileHash": "3fa91989",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "5ad70a35",
+      "fileHash": "fb7dfe1a",
       "needsInterop": false
-    },
-    "@taiga-ui/core": {
-      "src": "../../../../../../node_modules/@taiga-ui/core/fesm2015/taiga-ui-core.js",
-      "file": "@taiga-ui_core.js",
-      "fileHash": "180cd12c",
-      "needsInterop": false
-    },
-    "@taiga-ui/i18n": {
-      "src": "../../../../../../node_modules/@taiga-ui/i18n/fesm2015/taiga-ui-i18n.js",
-      "file": "@taiga-ui_i18n.js",
-      "fileHash": "674c76e7",
-      "needsInterop": false
-    },
-    "@tinkoff/ng-event-plugins": {
-      "src": "../../../../../../node_modules/@tinkoff/ng-event-plugins/fesm2015/tinkoff-ng-event-plugins.js",
-      "file": "@tinkoff_ng-event-plugins.js",
-      "fileHash": "be4fcaca",
-      "needsInterop": false
-    },
-    "angular-oauth2-oidc": {
-      "src": "../../../../../../node_modules/angular-oauth2-oidc/fesm2022/angular-oauth2-oidc.mjs",
-      "file": "angular-oauth2-oidc.js",
-      "fileHash": "82f79f72",
-      "needsInterop": false
-    },
-    "class-transformer": {
-      "src": "../../../../../../node_modules/class-transformer/esm5/index.js",
-      "file": "class-transformer.js",
-      "fileHash": "cb907080",
-      "needsInterop": false
-    },
-    "lodash-es": {
-      "src": "../../../../../../node_modules/lodash-es/lodash.js",
-      "file": "lodash-es.js",
-      "fileHash": "a7b283f4",
-      "needsInterop": false
-    },
-    "rxjs": {
-      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
-      "file": "rxjs.js",
-      "fileHash": "d10a56d6",
-      "needsInterop": false
-    },
-    "rxjs/operators": {
-      "src": "../../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
-      "file": "rxjs_operators.js",
-      "fileHash": "3640cb4c",
-      "needsInterop": false
-    },
-    "tslib": {
-      "src": "../../../../../../node_modules/tslib/tslib.es6.mjs",
-      "file": "tslib.js",
-      "fileHash": "6cb4e648",
-      "needsInterop": false
-    },
-    "@taiga-ui/kit": {
-      "src": "../../../../../../node_modules/@taiga-ui/kit/fesm2015/taiga-ui-kit.js",
-      "file": "@taiga-ui_kit.js",
-      "fileHash": "62598e0e",
-      "needsInterop": false
-    },
-    "reflect-metadata": {
-      "src": "../../../../../../node_modules/reflect-metadata/Reflect.js",
-      "file": "reflect-metadata.js",
-      "fileHash": "da64f4ed",
-      "needsInterop": true
     },
     "@taiga-ui/addon-table": {
       "src": "../../../../../../node_modules/@taiga-ui/addon-table/fesm2015/taiga-ui-addon-table.js",
       "file": "@taiga-ui_addon-table.js",
-      "fileHash": "51e3bf7c",
+      "fileHash": "512de2d0",
       "needsInterop": false
     },
     "@taiga-ui/addon-tablebars": {
       "src": "../../../../../../node_modules/@taiga-ui/addon-tablebars/fesm2015/taiga-ui-addon-tablebars.js",
       "file": "@taiga-ui_addon-tablebars.js",
-      "fileHash": "5a58129c",
-      "needsInterop": false
-    },
-    "@taiga-ui/experimental": {
-      "src": "../../../../../../node_modules/@taiga-ui/experimental/fesm2015/taiga-ui-experimental.js",
-      "file": "@taiga-ui_experimental.js",
-      "fileHash": "e6c9df49",
-      "needsInterop": false
-    },
-    "@tinkoff/ng-polymorpheus": {
-      "src": "../../../../../../node_modules/@tinkoff/ng-polymorpheus/fesm2015/tinkoff-ng-polymorpheus.js",
-      "file": "@tinkoff_ng-polymorpheus.js",
-      "fileHash": "3b94d09f",
+      "fileHash": "5bde9519",
       "needsInterop": false
     },
     "@taiga-ui/cdk": {
       "src": "../../../../../../node_modules/@taiga-ui/cdk/fesm2015/taiga-ui-cdk.js",
       "file": "@taiga-ui_cdk.js",
-      "fileHash": "9fbe9868",
+      "fileHash": "0d77a48f",
+      "needsInterop": false
+    },
+    "@taiga-ui/core": {
+      "src": "../../../../../../node_modules/@taiga-ui/core/fesm2015/taiga-ui-core.js",
+      "file": "@taiga-ui_core.js",
+      "fileHash": "07c08026",
+      "needsInterop": false
+    },
+    "@taiga-ui/experimental": {
+      "src": "../../../../../../node_modules/@taiga-ui/experimental/fesm2015/taiga-ui-experimental.js",
+      "file": "@taiga-ui_experimental.js",
+      "fileHash": "b1a77825",
+      "needsInterop": false
+    },
+    "@taiga-ui/kit": {
+      "src": "../../../../../../node_modules/@taiga-ui/kit/fesm2015/taiga-ui-kit.js",
+      "file": "@taiga-ui_kit.js",
+      "fileHash": "b453020c",
+      "needsInterop": false
+    },
+    "@tinkoff/ng-polymorpheus": {
+      "src": "../../../../../../node_modules/@tinkoff/ng-polymorpheus/fesm2015/tinkoff-ng-polymorpheus.js",
+      "file": "@tinkoff_ng-polymorpheus.js",
+      "fileHash": "ccf8245e",
+      "needsInterop": false
+    },
+    "angular-oauth2-oidc": {
+      "src": "../../../../../../node_modules/angular-oauth2-oidc/fesm2022/angular-oauth2-oidc.mjs",
+      "file": "angular-oauth2-oidc.js",
+      "fileHash": "f35c949c",
+      "needsInterop": false
+    },
+    "class-transformer": {
+      "src": "../../../../../../node_modules/class-transformer/esm5/index.js",
+      "file": "class-transformer.js",
+      "fileHash": "52405ac8",
+      "needsInterop": false
+    },
+    "lodash-es": {
+      "src": "../../../../../../node_modules/lodash-es/lodash.js",
+      "file": "lodash-es.js",
+      "fileHash": "d6660c03",
+      "needsInterop": false
+    },
+    "reflect-metadata": {
+      "src": "../../../../../../node_modules/reflect-metadata/Reflect.js",
+      "file": "reflect-metadata.js",
+      "fileHash": "16f19f62",
+      "needsInterop": true
+    },
+    "rxjs": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "fe316f9d",
+      "needsInterop": false
+    },
+    "rxjs/operators": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
+      "file": "rxjs_operators.js",
+      "fileHash": "0df59d6e",
+      "needsInterop": false
+    },
+    "tslib": {
+      "src": "../../../../../../node_modules/tslib/tslib.es6.mjs",
+      "file": "tslib.js",
+      "fileHash": "03f9fe2b",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-DOVRBDID": {
-      "file": "chunk-DOVRBDID.js"
+    "chunk-OOEXMNOK": {
+      "file": "chunk-OOEXMNOK.js"
     },
-    "chunk-XCMDLZBW": {
-      "file": "chunk-XCMDLZBW.js"
+    "chunk-2B3GAIHW": {
+      "file": "chunk-2B3GAIHW.js"
     },
-    "chunk-T4CCKFGY": {
-      "file": "chunk-T4CCKFGY.js"
+    "chunk-2WFSCSU5": {
+      "file": "chunk-2WFSCSU5.js"
     },
-    "chunk-OPOPPP4W": {
-      "file": "chunk-OPOPPP4W.js"
-    },
-    "chunk-AIYDBCE4": {
-      "file": "chunk-AIYDBCE4.js"
-    },
-    "chunk-OCBWOXYR": {
-      "file": "chunk-OCBWOXYR.js"
-    },
-    "chunk-XSI3Z367": {
-      "file": "chunk-XSI3Z367.js"
-    },
-    "chunk-XWRF4YCG": {
-      "file": "chunk-XWRF4YCG.js"
+    "chunk-XSZEMEAF": {
+      "file": "chunk-XSZEMEAF.js"
     },
     "chunk-ZVRBU4VF": {
       "file": "chunk-ZVRBU4VF.js"
     },
-    "chunk-2WFSCSU5": {
-      "file": "chunk-2WFSCSU5.js"
+    "chunk-OCBWOXYR": {
+      "file": "chunk-OCBWOXYR.js"
+    },
+    "chunk-XWRF4YCG": {
+      "file": "chunk-XWRF4YCG.js"
     },
     "chunk-EFD2AJG6": {
       "file": "chunk-EFD2AJG6.js"
