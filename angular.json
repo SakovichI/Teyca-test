@@ -47,7 +47,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/Teyca-test/",
               "budgets": [
                 {
                   "type": "initial",
