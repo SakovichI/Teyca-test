@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { instanceToPlain, plainToInstance } from 'class-transformer';\nexport const mapInstanceToPlain = (SourceClass, sourceObject) => {\n  return instanceToPlain(plainToInstance(SourceClass, sourceObject));\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

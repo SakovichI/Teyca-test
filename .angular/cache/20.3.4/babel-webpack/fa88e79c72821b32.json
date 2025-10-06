@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  devUrl: 'https://api.teyca.ru'\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const VALIDATION_ERRORS = {\n  required: 'Поле обязательно для заполнения'\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

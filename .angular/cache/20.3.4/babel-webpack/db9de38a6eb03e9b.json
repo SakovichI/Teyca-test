@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { environment } from '../../../../environments';\nexport const CLIENT_API_BASE_PATH = token => `${environment.devUrl}/v1/${token}/passes`;","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

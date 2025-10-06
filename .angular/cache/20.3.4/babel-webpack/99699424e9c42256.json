@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { ClientActionType } from '../enums';\nexport const CLIENT_ACTION_LABEL_MAP = {\n  [ClientActionType.Add]: 'Добавить',\n  [ClientActionType.SendPush]: 'Отправить Push',\n  [ClientActionType.Edit]: 'Обновить',\n  [ClientActionType.Delete]: 'Удалить'\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

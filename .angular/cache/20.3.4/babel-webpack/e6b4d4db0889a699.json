@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { environment } from '../../../../environments';\nexport const PUSH_MESSAGE_BASE_PATH = token => `${environment.devUrl}/v1/${token}/message/push`;","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

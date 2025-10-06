@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { __decorate } from \"tslib\";\nimport { TransformDate } from '../../../../core/decorators';\nexport class PushMessage {\n  dateStart;\n  id;\n  userId;\n  pushMessage;\n}\n__decorate([TransformDate()], PushMessage.prototype, \"dateStart\", void 0);","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

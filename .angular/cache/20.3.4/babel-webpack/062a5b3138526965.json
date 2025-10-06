@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const DEBOUNCE_TIME_API = 700; // 0.7s\nexport const DEBOUNCE_TIME_UI = 200; // 0.2s","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

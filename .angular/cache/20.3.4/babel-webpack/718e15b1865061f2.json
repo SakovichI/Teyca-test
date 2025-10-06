@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { environment } from './../../environments/environments';\nexport const AUTH_BASE_PATH = `${environment.devUrl}/test-auth-only`;","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

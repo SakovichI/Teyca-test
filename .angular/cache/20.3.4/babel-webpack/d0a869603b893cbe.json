@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const toResult = response => response.passes;","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

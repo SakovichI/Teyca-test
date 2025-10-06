@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { environment } from '../../../environments';\nexport const isInternalApiUrl = req => {\n  return req.url.startsWith('/') || req.url.startsWith(environment.devUrl);\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

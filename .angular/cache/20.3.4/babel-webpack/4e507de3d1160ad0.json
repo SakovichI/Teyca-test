@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { TUI_VALIDATION_ERRORS } from '@taiga-ui/kit';\nimport { VALIDATION_ERRORS } from '../constants';\nexport const provideErrors = () => ({\n  provide: TUI_VALIDATION_ERRORS,\n  useValue: VALIDATION_ERRORS\n});","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

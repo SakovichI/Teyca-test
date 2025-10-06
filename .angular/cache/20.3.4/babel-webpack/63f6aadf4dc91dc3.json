@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const negativeBoolean = statement => !statement;","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
